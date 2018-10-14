@@ -1,0 +1,207 @@
+       * {
+           box-sizing: border-box;
+       }
+
+       body {
+           margin: 0;
+           font-family: "Helvetica", sans-serif;
+       }
+
+       img {
+           max-width: 100%;
+
+       }
+
+
+
+       /* ---------main wrapper-------- */
+
+       .wrapper {
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: auto;
+           grid-template-areas: "header"
+               "img-header"
+               "about-comp"
+               "icons"
+               "enter-code"
+               "promo-vid"
+               "about-yfu"
+               "stories"
+       }
+
+
+       /* ~~~~~~~~ GRID AREAS ~~~~~~~~~ */
+       .header {
+           grid-area: header;
+       }
+
+       .img-header {
+           grid-area: img-header;
+       }
+
+       .about-comp {
+           grid-area: about-comp;
+       }
+
+       .icons {
+           grid-area: icons;
+       }
+
+       .enter-code {
+           grid-area: enter-code;
+       }
+
+       .promo-vid {
+           grid-area: promo-vid;
+       }
+
+       .about-yfu {
+           grid-area: about-yfu;
+       }
+
+       .stories {
+           grid-area: stories;
+       }
+
+       /* HEADER */
+
+       .logo {
+           text-align: left;
+
+       }
+
+
+       .header {
+           background-color: #642869;
+           display: grid;
+           grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+           color: white;
+
+           font-size: 19px;
+           text-align: right;
+           padding: 1em 1em 0.5em;
+
+
+       }
+
+       .aboutC,
+       .enterC,
+       .promoV,
+       .aboutY {
+           padding: 1.5em 1em;
+       }
+
+
+
+       /* IMG HEADER */
+
+       .img-header {
+           background-image: url(city5.jpg);
+           background-size: cover;
+           background-repeat: no-repeat;
+           height: 54em;
+       }
+
+
+
+
+       /* ABOUT COMPETITION */
+
+       .about-comp {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           padding: 4em;
+           margin: 3em;
+           grid-gap: 2em;
+       }
+
+
+
+       /* ICONS */
+
+       .icons {
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+           text-align: center;
+       }
+
+       .iconimg {
+           max-height: 220px;
+       }
+
+
+       /*  ENTER CODE */
+
+
+
+       .enter-code {
+           background-image: url(world.png);
+           background-size: cover;
+
+       }
+
+
+       /* PROMO VIDEO */
+       .promo-vid {
+           text-align: center;
+           margin: 3em;
+
+       }
+
+       .iframe-container {
+           position: relative;
+           width: 100%;
+           padding-bottom: 56.25%;
+           height: 0;
+       }
+
+       .iframe-container iframe {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+       }
+
+
+       /*  ABOUT YFU */
+
+       .about-yfu {
+           display: grid;
+           grid-template-columns: 1fr 1f;
+           grid-gap: 3em;
+           grid-template-areas: "about-yfu-img about-yfu-text";
+           margin: 2em;
+
+       }
+.about-yfu-img{grid-area: about-yfu-img;
+margin-left: 4em;
+text-align: center;}
+.about-yfu-text{grid-area: about-yfu-text;
+text-align: right;
+margin-right: 4em;
+padding-left: 3em;}
+
+
+
+       /* STORIES */
+
+       .stories {
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+           margin: 3em;
+           text-align: center;
+       }
+
+
+       /* FOOTER */
+
+       footer {
+           background-color: #642869;
+           color: white;
+           padding: 1em;
+           display: grid;
+           grid-template-columns: 1fr 4fr;
+           grid-gap: 1em;
+       }
