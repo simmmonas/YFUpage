@@ -12,6 +12,24 @@
 
        }
 
+       a {
+           color: white;
+           text-decoration: none;
+       }
+
+       a:visited {
+           color: white;
+           text-decoration: none;
+       }
+
+       a:hover {
+           font-size: 24px;
+           cursor: pointer;
+       }
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!MOBILE VERSION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.header{display: none;}
 
 
        /* ---------main wrapper-------- */
@@ -20,7 +38,7 @@
            display: grid;
            grid-template-columns: 1fr;
            grid-template-rows: auto;
-           grid-template-areas: "header"
+           grid-template-areas: "navigation"
                "img-header"
                "about-comp"
                "icons"
@@ -31,7 +49,7 @@
        }
 
 
-       /* ~~~~~~~~ GRID AREAS ~~~~~~~~~ */
+ /* ~~~~~~~~ GRID AREAS ~~~~~~~~~ */
        .header {
            grid-area: header;
        }
@@ -63,9 +81,271 @@
        .stories {
            grid-area: stories;
        }
+.navigation {
+    grid-area: navigation;
+}
+/*NAVIGATION*/
+.navigation { background-color: #642869;
+    text-align: center;
+    padding: 1em;
+    display:
+
+
+}
+.nav {
+    display: none;}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+
+
+
+}
+
+.aboutC, .enterC, .promoV , .aboutY {
+    padding: 1em;
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+
+
+
+ /* IMG HEADER */
+
+       .img-header {
+           background-image: url(city5.jpg);
+           background-size: contain;
+           background-repeat: no-repeat;
+           height: 25em;
+
+       }
+
+/* ABOUT COMPETITION */
+
+       .about-comp {
+           display: grid;
+           grid-template-columns: 1fr;
+           padding: 0em 4em 4em s4em;
+           margin: 0em 3em 3em 3em;
+           grid-gap: 2em;
+       }
+
+       .about-comp-img {
+           opacity: 0;
+           transform: translateX(200px);
+           transition: all 1s ease-out;
+       }
+
+       .about-comp-img.fade-left {
+           opacity: 1;
+           transform: translateZ(0);
+       }
+
+       .about-comp-text {
+           opacity: 0;
+           transform: translateX(-200px);
+           transition: all 1s ease-out;
+       }
+
+       .about-comp-text.fade-right {
+           opacity: 1;
+           transform: translateZ(0);
+       }
+
+       /* ICONS */
+
+       .icons {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           text-align: center;
+           opacity: 0;
+           transform: translateY(100px);
+           transition: all 1s ease-out;
+       }
+
+       .icons.fade-in {
+           opacity: 1;
+           transform: translateY(0);
+       }
+
+       .iconimg {
+           max-height: 220px;
+       }
+
+/*  ENTER CODE */
+
+
+
+       .enter-code {
+           background-image: url(world.png);
+           background-size: contain;
+           background-repeat: no-repeat;
+           height: 20em;
+           display: flex;
+           padding-top: 40%;
+           justify-content: center;
+
+       }
+
+       input[type=text] {
+           border: 2px solid black;
+           border-radius: 100px;
+           width: 200px;
+           height: 27px;
+
+       }
+
+       input[type=button] {
+           border-radius: 100px;
+           height: 27px;
+           width: 60px;
+           background-color: #642869;
+           color: white;
+           font-size: 15px;
+           text-align: center;
+       }
+
+ /* PROMO VIDEO */
+       .promo-vid {
+           text-align: center;
+           margin: 0em 3em 3em 3em;
+
+       }
+
+       .iframe-container {
+           position: relative;
+           width: 100%;
+           padding-bottom: 56.25%;
+           height: 0;
+       }
+
+       .iframe-container iframe {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+       }
+
+  /*  ABOUT YFU */
+
+       .about-yfu {
+           display: grid;
+           grid-template-columns: 1fr ;
+           grid-template-rows: auto;
+           grid-template-areas: "about-yfu-img"
+               "about-yfu-text";
+
+
+       }
+
+       .about-yfu-img {
+           grid-area: about-yfu-img;
+           margin-left: 4em;
+           text-align: center;
+       }
+
+       .about-yfu-text {
+           grid-area: about-yfu-text;
+           text-align: right;
+           margin-right: 4em;
+           padding-left: 3em;
+           padding-bottom:  5em;
+       }
+
+       .about-yfu-text {
+           opacity: 0;
+           transform: translateX(200px);
+           transition: all 1s ease-out;
+       }
+
+       .about-yfu-text.fade-left {
+           opacity: 1;
+           transform: translateZ(0);
+       }
+
+       .about-yfu-img {
+           opacity: 0;
+           transform: translateX(-200px);
+           transition: all 1s ease-out;
+       }
+
+       .about-yfu-img.fade-right {
+           opacity: 1;
+           transform: translateZ(0);
+       }
+
+
+       /* STORIES */
+
+       .stories {
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: auto;
+           margin: 3em;
+           text-align: center;
+           position: relative;
+           background-color: white;
+
+       }
+
+       /* FOOTER */
+
+       footer {
+           background-color: #642869;
+           color: white;
+           padding: 1em;
+           display: grid;
+           grid-template-columns: 2fr 2fr;
+           grid-gap: 1em;
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       /* !!!!!!!!!!!!!!!!!!!!!!!!DESKTOP VERSION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+@media (min-width: 600px) {
+    /* ---------main wrapper-------- */
+
+       .wrapper {
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: auto;
+           grid-template-areas: "header"
+               "img-header"
+               "about-comp"
+               "icons"
+               "enter-code"
+               "promo-vid"
+               "about-yfu"
+               "stories"
+       }
 
        /* HEADER */
-
+    .navigation{display: none;}
+    .container{display: none;}
        .logo {
            text-align: left;
 
@@ -92,20 +372,22 @@
            padding: 1.5em 1em;
        }
 
+       a.header {
+           color: white;
+       }
 
 
        /* IMG HEADER */
 
-       .img-header {
+
+
+ .img-header {
            background-image: url(city5.jpg);
-           background-size: cover;
+           background-size: contain;
            background-repeat: no-repeat;
            height: 54em;
-       }
 
-
-
-
+    }
        /* ABOUT COMPETITION */
 
        .about-comp {
@@ -116,7 +398,27 @@
            grid-gap: 2em;
        }
 
+       .about-comp-img {
+           opacity: 0;
+           transform: translateX(200px);
+           transition: all 1s ease-out;
+       }
 
+       .about-comp-img.fade-left {
+           opacity: 1;
+           transform: translateZ(0);
+       }
+
+       .about-comp-text {
+           opacity: 0;
+           transform: translateX(-200px);
+           transition: all 1s ease-out;
+       }
+
+       .about-comp-text.fade-right {
+           opacity: 1;
+           transform: translateZ(0);
+       }
 
        /* ICONS */
 
@@ -124,6 +426,14 @@
            display: grid;
            grid-template-columns: 1fr 1fr 1fr 1fr;
            text-align: center;
+           opacity: 0;
+           transform: translateY(100px);
+           transition: all 1s ease-out;
+       }
+
+       .icons.fade-in {
+           opacity: 1;
+           transform: translateY(0);
        }
 
        .iconimg {
@@ -138,7 +448,29 @@
        .enter-code {
            background-image: url(world.png);
            background-size: cover;
+           height: 57em;
+           display: flex;
+           padding-top: 44%;
+           justify-content: center;
 
+       }
+
+       input[type=text] {
+           border: 2px solid black;
+           border-radius: 100px;
+           width: 385px;
+           height: 47px;
+
+       }
+
+       input[type=button] {
+           border-radius: 100px;
+           height: 47px;
+           width: 100px;
+           background-color: #642869;
+           color: white;
+           font-size: 20px;
+           text-align: center;
        }
 
 
@@ -169,19 +501,50 @@
 
        .about-yfu {
            display: grid;
-           grid-template-columns: 1fr 1f;
+           grid-template-rows: auto;
            grid-gap: 3em;
+           grid-template-columns: auto;
            grid-template-areas: "about-yfu-img about-yfu-text";
            margin: 2em;
 
        }
-.about-yfu-img{grid-area: about-yfu-img;
-margin-left: 4em;
-text-align: center;}
-.about-yfu-text{grid-area: about-yfu-text;
-text-align: right;
-margin-right: 4em;
-padding-left: 3em;}
+
+       .about-yfu-img {
+           grid-area: about-yfu-img;
+           margin-left: 4em;
+           text-align: center;
+
+       }
+
+       .about-yfu-text {
+           grid-area: about-yfu-text;
+           text-align: right;
+           margin-right: 4em;
+           padding-left: 3em;
+       }
+
+       .about-yfu-text {
+           opacity: 0;
+           transform: translateX(200px);
+           transition: all 1s ease-out;
+       }
+
+       .about-yfu-text.fade-left {
+           opacity: 1;
+           transform: translateZ(0);
+       }
+
+       .about-yfu-img {
+           opacity: 0;
+           transform: translateX(-200px);
+           transition: all 1s ease-out;
+       }
+
+       .about-yfu-img.fade-right {
+           opacity: 1;
+           transform: translateZ(0);
+       }
+
 
 
 
@@ -192,7 +555,9 @@ padding-left: 3em;}
            grid-template-columns: 1fr 1fr 1fr;
            margin: 3em;
            text-align: center;
-           color: coral;
+           position: relative;
+           background-color: white;
+
        }
 
 
@@ -206,3 +571,19 @@ padding-left: 3em;}
            grid-template-columns: 1fr 4fr;
            grid-gap: 1em;
        }
+
+
+    }
+
+@media (min-width: 1000px) {
+      .img-header {
+           background-image: url(city5.jpg);
+           background-size: cover;
+           background-repeat: no-repeat;
+           height: 54em;
+
+       }
+
+
+       }
+

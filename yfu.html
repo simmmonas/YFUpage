@@ -8,28 +8,46 @@
     <title>YFU campaign</title>
 </head>
 <div class="wrapper">
+
+    <!--DESKTOP NAVIGATION-->
+
+
     <div class="header">
         <div class="logo"><img class="logoimg" src="yfu-logo1.png"> </div>
-        <div class="aboutC">ABOUT CAMPAIGN</div>
-        <div class="enterC">ENTER CODE</div>
-        <div class="promoV">PROMO VIDEO</div>
-        <div class="aboutY">ABOUT YFU</div>
+        <div class="aboutC"><a href="#aboutComp">ABOUT CAMPAIGN</a> </div>
+        <div class="enterC"><a href="#enterCode"> ENTER CODE</a></div>
+        <div class="promoV"><a href="#promoVid">PROMO VIDEO</a> </div>
+        <div class="aboutY"><a href="#aboutYfu">ABOUT YFU</a> </div>
     </div>
 
+    <!--MOBILE NAVIGATION-->
 
+    <div class="navigation">
+       <div class="container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <nav class="nav">
+        <div class="aboutC"><a href="#aboutComp">ABOUT CAMPAIGN</a> </div>
+        <div class="enterC"><a href="#enterCode"> ENTER CODE</a></div>
+        <div class="promoV"><a href="#promoVid">PROMO VIDEO</a> </div>
+        <div class="aboutY"><a href="#aboutYfu">ABOUT YFU</a> </div>
+        </nav>
+    </div>
 
     <div class="img-header" id="img-header"></div>
-    <div class="about-comp">
-        <div class="about-comp-text">
+    <div class="about-comp" id="aboutComp">
+        <div class="about-comp-text" id="text1">
             <h2> ABOUT COMPETITION</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
-        <div class="about-comp-img"> <img src="Netherlands_2015_Stud_GroupPortrait.png" alt="kids"></div>
+        <div class="about-comp-img" id="img1"> <img src="Netherlands_2015_Stud_GroupPortrait.png" alt="kids"></div>
     </div>
 
 
 
-    <div class="icons">
+    <div class="icons" id="icons">
         <div class="i1">
             <img class="iconimg" src="icons.png" alt="icon">
             <p>1. Buy a box of milk</p>
@@ -52,53 +70,62 @@
     </div>
 
 
-    <div class="enter-code">
-
-        <img class="world" src="world.png" alt="world">
+    <div class="enter-code" id="enterCode">
+        <div class="flexcontainer"></div>
+        <form>
+            <input type="text" name="code">
+            <input type="button" onclick="alert('Code has been submitted!')" value="Enter ">
+        </form>
     </div>
 
 
-    <div class="promo-vid">
-        <h1>PROMO VIDEO</h1>
-        <div class="iframe-container"><iframe width="760" height="515" src="https://www.youtube.com/embed/m7Bc3pLyij0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+</div>
+
+
+<div class="promo-vid" id="promoVid">
+    <h1>PROMO VIDEO</h1>
+    <div class="iframe-container"><iframe width="760" height="515" src="https://www.youtube.com/embed/m7Bc3pLyij0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+</div>
+
+
+<div class="about-yfu" id="aboutYfu">
+    <div class="about-yfu-img" id="img2">
+        <img src="Uruguay_2015_Stud_SandRunningBeach.png" alt="people"> </div>
+    <div class="about-yfu-text" id="text2">
+        <h2>ABOUT YFU</h2>
+        <p>Youth For Understanding (YFU) is a volunteer-based global non-profit community driven by the passion of people, consisting of 55+ Member Organizations across six continents. As a leader in intercultural exchange and educational programs for more than 60 years, YFU has impacted more than 270.000 students – and their host families, schools and networks – and more than 70.000 volunteers. <br>
+
+
+            Since its beginning, we have been united by the belief that full cultural immersion is an effective means to gain the skills needed to thrive in an increasingly multicultural, competitive global society. We have earned the reputation as one of the world's oldest, largest, and most respected intercultural exchange programs over the past 60 years of success. At our core, we are a catalyst for positive global change, leading communities into the future. YFU will be with you every step of the way, from application to return and will help you stay in touch with the international community long after returning home. We create a safe, supportive environment in which to explore and gain a deeper understanding of different cultures.
+        </p>
     </div>
+</div>
 
 
-    <div class="about-yfu">
-        <div class="about-yfu-img">
-            <img src="Uruguay_2015_Stud_SandRunningBeach.png" alt="people"> </div>
-        <div class="about-yfu-text">
-            <h2>ABOUT YFU</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
+<div class="stories">
+    <div class="story1">
+        <img src="Mask%20Group%208.png" alt="kid">
+        <p>Story description</p>
+
     </div>
-
-
-    <div class="stories">
-        <div class="story1">
-            <img src="Mask%20Group%208.png" alt="kid">
-            <p>Story description</p>
-
-        </div>
-        <div class="story2">
-            <img src="Mask%20Group%208.png" alt="kid">
-            <p>Story description</p>
-        </div>
-        <div class="story3">
-            <img src="Mask%20Group%208.png" alt="kid">
-            <p>Story description</p>
-        </div>
-        <div class="story4"><img src="Mask%20Group%208.png" alt="kid">
-            <p>Story description</p>
-        </div>
-        <div class="story5"><img src="Mask%20Group%208.png" alt="kid">
-            <p>Story description</p>
-        </div>
-        <div class="story6"><img src="Mask%20Group%208.png" alt="kid">
-            <p>Story description</p>
-        </div>
+    <div class="story2">
+        <img src="Mask%20Group%208.png" alt="kid">
+        <p>Story description</p>
     </div>
+    <div class="story3">
+        <img src="Mask%20Group%208.png" alt="kid">
+        <p>Story description</p>
+    </div>
+    <div class="story4"><img src="Mask%20Group%208.png" alt="kid">
+        <p>Story description</p>
+    </div>
+    <div class="story5"><img src="Mask%20Group%208.png" alt="kid">
+        <p>Story description</p>
+    </div>
+    <div class="story6"><img src="Mask%20Group%208.png" alt="kid">
+        <p>Story description</p>
+    </div>
+</div>
 
 
 
@@ -113,6 +140,13 @@
         Ring til os <br>
         +45 64 76 30 06</div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
 
 <script src="yfu.js"> </script>
 
